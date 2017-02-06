@@ -1,0 +1,33 @@
+{
+  "name": "node-push-server",
+  "version": "1.0.0",
+  "description": "Experimental HTTP/2 proxy to pre-emptively push resources to client",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shawa/daileoir.git"
+  },
+  "keywords": [
+    "node",
+    "http/2",
+    "server",
+    "push",
+    "push_promise"
+  ],
+  "author": "Andrew Shaw",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/shawa/daileoir/issues"
+  },
+  "homepage": "https://github.com/shawa/daileoir#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "morgan": "^1.8.0",
+    "spdy": "^3.4.4",
+    "winston": "^2.3.1"
+  }
+}
