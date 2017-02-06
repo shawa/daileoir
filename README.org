@@ -1,0 +1,8 @@
+* Daileoir
+For the moment, this is just going to be notes and gripes along the way.
+
+** NPN/ALPN
+- Chromium (and Firefox) recently dropped support for Next Protocol Negotiation (/NPN/) in favour of Application LayerProtocol Negotiation (/ALPN/).
+- The app will run in at least node v.4.1, link against older versions of openssl which don't support ALPN. i.e. no ~h2~ for Chromium and Firefox
+- Support forfor ALPN requires linking against Openssl 1.0.2k. which Node v7.5 is bundled with
+- Thus in order to serve over ~h2~ to latest browsers, be sure to use Node v7.5
